@@ -4,7 +4,7 @@
 '''
 
 def show_data(filename):
-    print("\nПП | ФИО | Телефон")
+    print("\n№ | ФИО | Телефон")
     with open(filename, "r", encoding="utf-8") as data:
         print(data.read())
     print("")
@@ -20,7 +20,7 @@ def export_data(filename):
         print(f"Добавлена запись : {num} | {fio} | {phone_number}\n")
 
 def edit_data(filename):
-    print("\nПП | ФИО | Телефон")
+    print("\n№ | ФИО | Телефон")
     with open(filename, "r", encoding='utf-8') as data:
         tel_book = data.read()
     print(tel_book)
@@ -43,7 +43,7 @@ def edit_data(filename):
         f.write("\n".join(tel_book_lines))
 
 def delete_data(filename):
-    print("\nПП | ФИО | Телефон")
+    print("\n№ | ФИО | Телефон")
     with open(filename, "r", encoding="utf-8") as data:
         tel_book = data.read()
         print(tel_book)
